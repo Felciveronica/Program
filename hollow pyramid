@@ -1,0 +1,23 @@
+int main()
+{
+    // Write C code here
+    int r,c,j;
+    c=2*r-1;
+    scanf("%d",&r);
+    for(int i=1; i<=r; i++) 
+    {
+       for(j=1;j<r+i;j++)
+       {  
+           if(j==r-i+1 || j==r+i-1 ||i==r)
+           {  
+           printf("* ");
+           }
+           else
+           {
+               printf("  ");
+           }
+      }
+     printf("\n");
+    }
+     return 0;
+}
